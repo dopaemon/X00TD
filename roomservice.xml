@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="CAF-Repo"
+          fetch="https://source.codeaurora.org" />
+          
+  <!-- Remove Old Repo -->
+  <remove-project name="vendor/qcom/opensource/data-ipa-cfg-mgr" />
+  <remove-project name="hardware/qcom-caf/wlan" />
+  <remove-project name="vendor/qcom/opensource/power" />
+  <remove-project name="external/tinyalsa" />
+  <remove-project name="external/tinycompress" />
+  <remove-project name="hardware/qcom-caf/msm8998/audio" />
+  <remove-project name="hardware/qcom-caf/msm8998/media" />
+  <remove-project name="hardware/qcom-caf/msm8998/display" />
+  <remove-project name="hardware/qcom-caf/thermal" />
+  <remove-project name="hardware/libhardware" />
+  <remove-project name="packages/apps/Camera" />
+  <remove-project name="frameworks/base/data/sounds/google" />
+  <remove-project name="vendor/descendant/charger" />
+  
+  <!-- Add Github Repo -->
+  <project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github"   revision="lineage-18.1" />
+  <project name="LineageOS/android_hardware_qcom_wlan"                      path="hardware/qcom-caf/wlan"                  remote="github"   revision="lineage-18.1-caf" />
+  <project name="LineageOS/android_hardware_libhardware"                    path="hardware/libhardware"                    remote="github"   revision="lineage-18.0" />
+  <project name="pkm774/vendor_qcom_opensource_power"                       path="vendor/qcom/opensource/power"            remote="github"   revision="power.legacyopensource.lnx.1.0.r15-rel" />
+  <project name="pkm744/external_tinycompress"                              path="external/tinycompress"                   remote="github"   revision="ks-aosp.lnx.3.0.r15-rel" />
+  <project name="pkm744/hardware_qcom-caf_msm8998_audio"                    path="hardware/qcom-caf/msm8998/audio"         remote="github"   revision="audio-hal.lnx.8.0.r14-rel" />
+  <project name="pkm744/hardware_qcom-caf_media_msm8998"                    path="hardware/qcom-caf/msm8998/media"         remote="github"   revision="11" />
+  <project name="pkm744/hardware_qcom-caf_display_msm8998"                  path="hardware_qcom-caf_display_msm8998"       remote="github"   revision="11" />
+  <project name="pkm744/android_hardware_qcom_thermal"                      path="hardware/qcom-caf/thermal"               remote="github"   revision="aosp-new/android11-qpr3-s1-release" />
+  
+  <!-- Add CAF Repo -->
+  <project name="quic/la/platform/external/tinyalsa"                        path="external/tinyalsa"                       remote="CAF-Repo" revision="ks-aosp.lnx.3.0.r15-rel external/tinyalsa" />
+  
+  <!-- Snapdragon Camera -->
+  <project name="pkm744/packages_apps_SnapdragonCamera"                     path="packages/apps/Camera"                    remote="github"   revision="camera.lnx.3.2.r13-rel" />
+  <project name="pkm744/aosp_sounds"                                        path="frameworks/base/data/sounds/google"      remote="github"   revision="master" />
+</manifest>
