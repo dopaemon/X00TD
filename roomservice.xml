@@ -36,4 +36,9 @@
   <!-- Snapdragon Camera -->
   <project name="pkm744/packages_apps_SnapdragonCamera"                     path="packages/apps/Camera"                    remote="github"   revision="camera.lnx.3.2.r13-rel" />
   <project name="pkm744/aosp_sounds"                                        path="frameworks/base/data/sounds/google"      remote="github"   revision="master" />
+  
+  <!-- Asus Zenfone Max Pro M1 X00TD -->
+  <project name="STRK-ND/device_asus_X00TD"                                 path="device/asus/X00TD"                       remote="github"   revision="main" />
+  <project name="STRK-ND/vendor_asus_X00TD"                                 path="vendor/asus"                             remote="github"   revision="11" />
+  <project name="STRK-ND/android_kernel_asus_x00t"                          path="kernel/asus/sdm660"                      remote="github"   revision="master" />
 </manifest>
