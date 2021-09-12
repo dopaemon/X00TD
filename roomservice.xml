@@ -5,7 +5,7 @@
           fetch="https://source.codeaurora.org" />
           
   <!-- Remove Old Repo -->
-  <remove-project name="vendor/qcom/opensource/data-ipa-cfg-mgr" />
+  <!-- <remove-project name="vendor/qcom/opensource/data-ipa-cfg-mgr" /> -->
   <remove-project name="hardware/qcom-caf/wlan" />
   <remove-project name="vendor/qcom/opensource/power" />
   <remove-project name="external/tinyalsa" />
